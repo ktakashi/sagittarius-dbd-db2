@@ -1,0 +1,5 @@
+;; -*- mode:scheme; coding:utf-8 -*-
+(cond-expand
+ ((or windows cygwin) "db2cli.dll")
+ ;; TODO other operating system.
+ (else    "libdb2.so.1"))
